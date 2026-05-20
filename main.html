@@ -8,34 +8,39 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-   <nav> 
-        <ul>
-            <li><a href="https://open.spotify.com/">Spotify</a></li>
-            <li><a href="https://www.bbc.com/news">News</a></li>
-            <li><a href="https://www.ticketmaster.com/concerts">Concert</a></li>
-        </ul>
-    </nav>
+      <!-- Part 1: Semantic Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-	<h2>Text: 3 random audios</h2>
-    <p>3 tracks with given URLs and controls:</p>
-	<p>URL 1:</p>
-<audio controls>
+  <!-- Part 2: Audio Section -->
+  <main>
+    <h2>3 random <span>audios</span></h2>
+
+    <div class="tracks">
+      <div class="track">
+        <span class="track-label">Track 01</span>
+        <audio controls src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"></audio>
+      </div>
+
+      <div class="track">
+        <span class="track-label">Track 02</span>
+        <audio controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"></audio>
+      </div>
+
+      <div class="track">
+        <span class="track-label">Track 03</span>
+        <audio controls src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3"></audio>
+      </div>
+    </div>
+  </main>
+
 	
-  <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg" />
-</audio>
-<br />
-<p>URL 2:</p>
-<audio controls>
-	
-  <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg" />
-</audio>
-<br />
-<p>URL 3:</p>
-<audio controls>
-	
-  <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg" />
-</audio>
- <script type="text/javascript" src="./script.js">
+	<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
